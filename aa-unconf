@@ -1,0 +1,8 @@
+#!/usr/bin/env python3.8
+import main
+service = main.AppArmorService()
+ucf_items = service.get_unconfined()
+print("SDSDSD")
+for item in ucf_items:
+    print(item[1])
+
