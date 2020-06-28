@@ -1,0 +1,9 @@
+#!/usr/bin/env python3.8
+import main
+service = main.AppArmorService()
+profile_iterator = service.get_profiles()
+print('version: ' + profile_iterator['version'])
+
+for profile in profile_iterator['profiles']:
+   status = profile_iterator["profiles"][profile]
+   print(status + " " + profile)
